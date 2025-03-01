@@ -9,7 +9,7 @@ API = '5b4874614f4c7bfc878d18ec472ddf3f'
 @bot.message_handler(commands=['start'])
 def main(message):
     bot.send_message(message.chat.id, "Салем ")
-
+# работа с апи сервисом
 @bot.message_handler(content_types=['text'])
 def get_wheather(messege):
     city = messege.text.strip().lower()
